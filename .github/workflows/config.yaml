@@ -24,5 +24,4 @@ jobs:
           poetry install
 
       - name: Run formatter
-        working-directory: functions
         run: poetry run black --diff --check .
