@@ -18,7 +18,9 @@ jobs:
           python-version: 3.8
 
       - name: Install dependencies
-        run: poetry install
+        run: |
+          pip install poetry
+          poetry install
 
       - name: Run formatter
         working-directory: functions
