@@ -7,7 +7,7 @@ authors = ["sfujiwara <shuhei.fujiwara@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">= 3.7, < 3.9"
-tfx = {version = "^1.0.0-rc.0", allow-prereleases = true}
+tfx = {version = "^1.0.0-rc.1", allow-prereleases = true}
 google-cloud-bigquery = "^1.28.0"
 
 [tool.poetry.dev-dependencies]
