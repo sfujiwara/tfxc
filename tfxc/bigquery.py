@@ -20,7 +20,6 @@ def BigQueryTableGen(
 
     client = bigquery.Client(project=project)
     job_config = bigquery.job.QueryJobConfig(
-        destination=destination,
-        write_disposition=bigquery.job.WriteDisposition.WRITE_TRUNCATE
+        destination=destination, write_disposition=bigquery.job.WriteDisposition.WRITE_TRUNCATE
     )
     _ = client.query(query, job_config=job_config)
